@@ -9,7 +9,7 @@ $("#myNavbarWeb a,#myNavbarMobile a, .click-scrolling ").on('click', function (e
     else{
         var hash = this.hash;
         $('html, body').animate({
-            scrollTop: $(hash).offset().top -0
+            scrollTop: $(hash).offset().top -50
         }, 800, function () {
             $('#navbar-collapse').removeClass('in');
             window.location.hash = hash;
