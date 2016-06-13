@@ -3,15 +3,22 @@ $("#myNavbarWeb a,#myNavbarMobile a, .click-scrolling ").on('click', function (e
     var pageRef = $(this).attr("href");
     var offset = 80;
     if(pageRef[0] != '#') {
+        $('#navbar-collapse').removeClass('in');
         window.location.href = pageRef;
-      }
-      else{
+    }
+    else{
         var hash = this.hash;
         $('html, body').animate({
             scrollTop: $(hash).offset().top -0
         }, 800, function () {
+            $('#navbar-collapse').removeClass('in');
             window.location.hash = hash;
-
         });
-      }
-    });
+    }
+});
+$('.header-container, .borders, .click-scrolling').click(function () {
+    $('#navbar-collapse').removeClass('in');
+});
+$('#navbar-trigger').click(function () {
+    $('#navbar-collapse').addClass('in');
+});

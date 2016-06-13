@@ -10,12 +10,16 @@
 }
 .navbar{
 	margin-bottom: 0px;
+	z-index:1;
 }
 .navbar-default{
 	border: none;
 	background-color: #FFF;
 	color: #151e34;
 	font-size: 18px;
+	position: fixed;
+    top: 0;
+    width: 100%;
 }
 .navbar-default .navbar-toggle {
     border: none;
@@ -40,6 +44,9 @@
     background-size: cover;
     text-align: center;
     height: 80vh;
+}
+.navbar .nav > li {
+z-index: 10000;
 }
 .padding-header{
 	padding-left: 30px;
@@ -248,6 +255,9 @@ p {
 	.image-container.dron{
 		padding-left: 0px;
 		padding-bottom: 100px;
+	}
+	.navbar-collapse{
+		padding-bottom: 10px;
 	}
 }
 @media(max-width: 769px){
