@@ -1,12 +1,15 @@
 
 .logo-navbar{
-	width: 80px;
+	width: 85px;
 	height: auto;
+}
+.logo-mobile{
+	display: none;
 }
 .logo-link{
 	padding: 0px !important;
 	padding-right: 20px !important;
-	padding-top: 8px !important;
+	padding-top: 6px !important;
 }
 .navbar{
 	margin-bottom: 0px;
@@ -41,16 +44,18 @@
 	color: #151e34;
 }
 .header-container{
-	background: url("../img/photos-03.jpg") center center no-repeat;
+	background: url("../img/photos-03.jpg") left top no-repeat;
     background-size: cover;
     text-align: center;
     height: 80vh;
+    margin-top: 50px;
 }
 .navbar .nav > li {
 z-index: 10000;
 }
 .padding-header{
-	padding-left: 30px;
+	padding-left: 75px;
+	width: 100%;
 	margin-bottom: 0;
     padding-top: 120px;
 }
@@ -92,7 +97,7 @@ p {
 	width: 180px;
 	background-color: #5a75b4;
 	border-radius: 30px;
-	padding: 5px 10px;
+	padding: 10px 10px;
 	text-align: center;
 	font-size: 15px;
 	letter-spacing: 3px;
@@ -105,16 +110,17 @@ p {
 	padding-right: 50px;
 }
 .filler{
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	padding-left: 50px;
 }
 .text-filler{
 	background-color: #f2f3f4;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 .filler-content{
-	font-size: 30px;
+	font-size: 32px;
 	color: #3c3c3b;
 	letter-spacing: 1px;
 	text-align: center;
@@ -124,8 +130,8 @@ p {
 	height: auto;
 }
 .image-container{
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 65px;
+	padding-bottom: 65px;
 }
 .image-container.one{
 	background: url("../img/photos-06.jpg") center center no-repeat;
@@ -136,14 +142,14 @@ p {
 .image-container.two{
 	background: url("../img/photos-08.jpg") center center no-repeat;
     background-size: cover;
-    text-align: center;
+    text-align: left;
     padding-left: 0px;
 }
 .image-container.three{
 	background: url("../img/photos-07.jpg") center center no-repeat;
     background-size: cover;
-    text-align: right;
-    padding-right: 30px;
+    text-align: left;
+    padding-right: 40px;
 }
 .image-container.dron{
 	background: url("../img/photos-09.jpg") center center no-repeat;
@@ -151,14 +157,25 @@ p {
     text-align: left;
     padding-left: 30px;
     padding-bottom: 200px;
-    padding-top: 120px;
+    padding-top: 160px;
 }
 .image-title{
 	font-size: 42px;
 }
+.no-float{
+	float: none;
+}
+.margin-right{
+	margin-right: 0px;
+	margin-left: auto;
+}
+.margin-left{
+	margin-left: 0px;
+	margin-right: auto;
+}
 .image-subtitle{
 	font-size: 88px;
-	line-height: 60px;
+	line-height: 70px;
 }
 .image-subtitle-dron{
 	font-size: 70px;
@@ -170,12 +187,13 @@ p {
 	padding-bottom: 90px;
 }
 .footer-logo{
-	width: 200px;
+	width: 170px;
 	height: auto;
 	margin: auto;
 }
 .footer-links{
 	font-size: 15px;
+	padding-bottom: 5px;
 }
 .footer-contact{
 	text-align: right;
@@ -190,15 +208,32 @@ p {
 @media(max-width: 680px){
     .logo-navbar{
     	margin: auto;
+    	padding-top: 8px;
     }
     .navbar-default .navbar-nav>li>a {
 	    text-align: center;
 	}
+	.logo-mobile{
+		display: block;
+		margin: auto;
+		padding-left: 42px;
+	}
 	.logo-link{
 		padding-right: 0px !important;
+		display: none !important;
+	}
+	.navbar-collapse{
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.header-container{
-		height: 70vh;
+		height: 80vh;
+		background: url("../img/photos-03.jpg") center top no-repeat;
+		background-size: cover;
+	}
+	.padding-header{
+		padding-left: 30px;
+
 	}
 	.header-title{
 		font-size: 25px;
@@ -233,6 +268,9 @@ p {
 		padding-right: 20px;
 		padding-left: 20px;
 	}
+	.filler{
+		padding-left: 0px;
+	}
 	.image-title{
 		font-size: 38px;
 	}
@@ -256,9 +294,6 @@ p {
 	.image-container.dron{
 		padding-left: 0px;
 		padding-bottom: 100px;
-	}
-	.navbar-collapse{
-		padding-bottom: 10px;
 	}
 }
 @media(max-width: 769px){
