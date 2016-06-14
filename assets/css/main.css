@@ -162,6 +162,9 @@ p {
 .image-title{
 	font-size: 42px;
 }
+.image-title-dron{
+	font-size: 42px;
+}
 .no-float{
 	float: none;
 }
@@ -278,9 +281,13 @@ p {
 		font-size: 68px;
 		line-height: 60px;
 	}
+	.image-title-dron{
+		font-size: 22px;
+		line-height: 38px;
+	}
 	.image-subtitle-dron{
 		font-size: 44px;
-		line-height: 60px;
+		line-height: 39px;
 	}
 	.image-container{
 		text-align: center !important;
@@ -293,7 +300,8 @@ p {
 	}
 	.image-container.dron{
 		padding-left: 0px;
-		padding-bottom: 100px;
+		padding-bottom: 150px;
+		padding-top: 90px;
 	}
 }
 @media(max-width: 769px){
