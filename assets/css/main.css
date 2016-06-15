@@ -3,7 +3,10 @@
 	width: 85px;
 	height: auto;
 }
-.logo-mobile{
+.logo-header-mobile{
+	display: none;
+}
+.dron-mobile{
 	display: none;
 }
 .logo-link{
@@ -44,7 +47,7 @@
 	color: #151e34;
 }
 .header-container{
-	background: url("../img/photos-03.jpg") left top no-repeat;
+	background: url("../img/photos-03.jpg") left top no-repeat fixed;
     background-size: cover;
     text-align: center;
     height: 80vh;
@@ -52,6 +55,15 @@
 }
 .navbar .nav > li {
 z-index: 10000;
+}
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 17px;
+    padding-bottom: 15px;
+}
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #5a75b4;
 }
 .padding-header{
 	padding-left: 75px;
@@ -72,6 +84,7 @@ z-index: 10000;
 }
 .header-description{
 	font-size: 34px;
+	padding-left: 4px;
 }
 p {
     margin: 0 0 0px;
@@ -122,7 +135,7 @@ p {
 .filler-content{
 	font-size: 32px;
 	color: #3c3c3b;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	text-align: center;
 }
 .trunz-logo{
@@ -161,6 +174,7 @@ p {
 }
 .image-title{
 	font-size: 42px;
+	padding-left: 4px;
 }
 .image-title-dron{
 	font-size: 42px;
@@ -200,7 +214,7 @@ p {
 }
 .footer-contact{
 	text-align: right;
-	padding-top: 40px;
+	padding-top: 30px;
 	padding-right: 20px;
 }
 .footer-info{
@@ -213,17 +227,24 @@ p {
     	margin: auto;
     	padding-top: 8px;
     }
+    .dron-mobile{
+    	display: block;
+    }
+    .dron-web{
+    	display: none;
+    }
     .navbar-default .navbar-nav>li>a {
 	    text-align: center;
 	}
-	.logo-mobile{
+	.logo-header-mobile{
 		display: block;
 		margin: auto;
-		padding-left: 42px;
+		width: 150px;
+		height: auto;
+		padding-bottom: 40px;
 	}
 	.logo-link{
 		padding-right: 0px !important;
-		display: none !important;
 	}
 	.navbar-collapse{
 		padding-left: 0px;
@@ -236,18 +257,30 @@ p {
 	}
 	.padding-header{
 		padding-left: 30px;
+		padding-top: 80px;
 
 	}
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+		color: #FFF;
+		background-color: #5a75b4;
+		font-weight: 700;
+	}
 	.header-title{
-		font-size: 25px;
+		font-size: 20px;
 		padding-bottom: 10px;
+		text-align: center;
+		font-weight: lighter;
 	}
 	.header-subtitle{
-		font-size: 60px;
-		line-height: 53px;
+		font-size: 30px;
+		line-height: 23px;
+		text-align: center;
 	}
 	.header-description{
-		font-size: 17px;
+		font-size: 15px;
+		line-height: 40px;
+		text-align: center;
+		font-weight: lighter;
 	}
 	.borders{
 		padding-right: 0px;
@@ -281,13 +314,19 @@ p {
 		font-size: 68px;
 		line-height: 60px;
 	}
-	.image-title-dron{
-		font-size: 22px;
+	.image-title-dron.dron-mobile.first{
+		font-size: 30px;
 		line-height: 38px;
+		padding-top: 30px;
 	}
-	.image-subtitle-dron{
+	.image-title-dron.dron-mobile.high{
 		font-size: 44px;
-		line-height: 39px;
+		line-height: 38px;
+		padding-bottom: 15px;
+	}
+	.image-subtitle-dron.dron-mobile{
+		font-size: 20px;
+		line-height: 24px;
 	}
 	.image-container{
 		text-align: center !important;
@@ -303,6 +342,10 @@ p {
 		padding-bottom: 150px;
 		padding-top: 90px;
 	}
+	.image-container.dron{
+	background: url("../img/photos-10.jpg") center center no-repeat;
+    background-size: cover;
+}
 }
 @media(max-width: 769px){
 	.footer-contact{
